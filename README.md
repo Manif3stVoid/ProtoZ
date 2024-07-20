@@ -19,9 +19,26 @@ j  - custom JS for payload validation
 
 ```
 
+ProtoZ Modes : 
+
+```
+Search Mode  - This is the default mode and this mode validate the payloads prefix with question mark 
+Hash Mode    - This mode validate the payloads prefix with hash
+Brute Mode   - This mode brute force urls with the payloads through both search and hash mode. The mode uses the payloads.txt file fir the bruteforcing which contains the PP payloads
+Gadget Mode  - This mode uses the payload which are specific to the JS gadgets from gadgets.txt file. This mode is experimental only. We need to manually validate the vulnerability once it is prints the url along with the                   payloads.
+
+```
+
+Usage :
+
+```
+./setup.sh -f urls.txt -j "console.log(document.title)" -m search
+./setup.sh -f domains.txt -m hash
+./setup.sh -f file.txt -m brute
+./setup.sh -f urls.txt -m gadget
 
 
-
+```
 
 
 
