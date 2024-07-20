@@ -1,9 +1,8 @@
 # Protoz
-Prototype Pollution Finder tool
+
+ProtoZ is a tool designed to find client side prototype pollution vulnerabilities.It requires Google Chromium headless browser, Go-lang, and unfurl. The setup.sh script, which processes URLs to detect prototype pollution vulenrabilities using default and custom JavaScript code. We can customize the JS as per the requirement. The tool outputs whether a given URL is vulnerable based on the injected prototype pollution payloads. 
 
 This tool is inspired from the NahamSec 2021 talk by @Tomnomnom(https://www.youtube.com/channel/UCyBZ1F8ZCJVKSIJPrLINFyA)
-
-https://www.youtube.com/watch?v=Gv1nK6Wj8qM
 
 # Dependencies
 GO lang version 1.22.x or more 
@@ -11,12 +10,16 @@ GO lang version 1.22.x or more
 # How to run this tool
 
 ```
+git clone https://github.com/Manif3stVoid/ProtoZ.git
+cd  ProtoZ
+chmod +x setup.sh
 ./setup.sh -f urls.txt -m search
 
+```
+```
 m  - mode types are search, hash, brute and gadget(Experimental)
 f  - input a file which should contains the urls
 j  - custom JS for payload validation
-
 ```
 
 ProtoZ Modes : 
@@ -37,8 +40,10 @@ Usage :
 ./setup.sh -f file.txt -m brute
 ./setup.sh -f urls.txt -m gadget
 
-
 ```
-
+# References 
+- https://www.youtube.com/watch?v=Gv1nK6Wj8qM 
+- https://github.com/BlackFan/client-side-prototype-pollution
+- https://github.com/msrkp/PPScan
 
 
