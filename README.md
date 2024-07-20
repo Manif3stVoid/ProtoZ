@@ -6,31 +6,18 @@ This tool is inspired from the NahamSec 2021 talk by @Tomnomnom(https://www.yout
 https://www.youtube.com/watch?v=Gv1nK6Wj8qM
 
 # Dependencies
+GO lang version 1.22.x or more 
 
-1,Google Chromium
-2,Go-lang
-3,unfurl
+# How to run this tool
 
-# How to build this tool
+```
+./setup.sh -f urls.txt -m search
 
-1, go get -u github.com/trapp3rhat/ProtoZ
+m  - mode types are search, hash, brute and gadget(Experimental)
+f  - input a file which should contains the urls
+j  - custom JS for payload validation
 
-2, Then download this repository
-
-3, run ./ProtoZ.sh 
-
-##*Note: Add path to the ProtoZ directory or GOPATH need to be added in the PATH*
- 
-What is inside this ProtoZ.sh ? 
-
-cat urls | unfurl -u format "%s://%d%p" | awk '{print $1 "?__proto__[hacker]=1337"}' | ProtoZ -j 'window.hacker? "Vulnerable" : "Not Vulnerable"'
- 
-# ProtoZ Help 
--j - JS which needs to be run 
-
-# XSS 
-
-cat urls | ./ProtoZ -j "document.cookie"
+```
 
 
 
