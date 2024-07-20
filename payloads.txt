@@ -1,0 +1,7 @@
+__proto__[hacker]=1337
+__proto__.hacker=1337
+constructor.prototype.hacker=1337
+__proto__[hacker]={"json":"1337"}
+__proto__.hacker=1|2|3
+constructor[prototype][hacker]=1337
+__proto__[1337]=1337
