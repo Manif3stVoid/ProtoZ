@@ -41,6 +41,26 @@ Usage :
 ./setup.sh -f urls.txt -m gadget
 
 ```
+#### Example usage with custom JS
+```
+Fetching all links (href attributes) from anchor tags:
+./setup.sh -f urls.txt -j '[...document.getElementsByTagName("a")].map(n => n.href).join(" ")' -m search
+
+Getting all image sources (src attributes) from <img> tags:
+./setup.sh -f urls.txt -j '[...document.getElementsByTagName("img")].map(img => img.src).join(" ")' -m search
+
+Colleting all text content from <p> tags:
+./setup.sh -f urls.txt -j '[...document.getElementsByTagName("p")].map(p => p.textContent).join(" ")' -m search
+
+Getting all values from input fields
+./setup.sh -f urls.txt -j '[...document.getElementsByTagName("input")].map(input => input.value).join(" ")' -m search
+
+Getting all alt text from images
+./setup.sh -f urls.txt -j '[...document.getElementsByTagName("img")].map(img => img.alt).join(" ")' -m search
+
+```
+
+
 ### If you found Client Side Prototype Pollution? What's Next?
 Check for the gadgets here https://github.com/BlackFan/client-side-prototype-pollution to use appropriate payload to exploit.
 
