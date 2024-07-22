@@ -41,7 +41,7 @@ Usage :
 ./setup.sh -f urls.txt -m gadget
 
 ```
-# If you found Client Side Prototype Pollution? What's Next?
+### If you found Client Side Prototype Pollution? What's Next?
 Check for the gadgets here https://github.com/BlackFan/client-side-prototype-pollution to use appropriate payload to exploit.
 
 # References 
